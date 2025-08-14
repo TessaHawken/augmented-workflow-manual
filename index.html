@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augmented Workflow Manual | Generative AI Strategy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <img src="https://www.generativeaistrategy.com/logos-tools/Logo%20background%20footer.svg" alt="Generative AI Strategy" class="logo">
+                    </div>
+                    <div class="tagline">
+                        <h2>Augmented Workflow Manual</h2>
+                        <p>Transform Presentations into Interactive Web Experiences</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">From Documentation to Deployment</h1>
+            <p class="hero-subtitle">A step-by-step guide for associates to create client-ready web pages using our augmented AI workflow</p>
+            <div class="hero-tagline">Unleash Human Potential Through Generative AI</div>
+        </div>
+    </section>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+            <p class="progress-text"><span id="completedSteps">0</span> of 5 steps completed</p>
+        </div>
+    </div>
+
+    <!-- Workflow Steps -->
+    <main class="workflow-section">
+        <div class="container">
+            <!-- Phase 1: Custom GPT -->
+            <div class="phase-group">
+                <h2 class="phase-title">Phase 1: Custom GPT Preparation</h2>
+                <p class="phase-description">Leverage AI to transform your project documentation into structured workflows</p>
+                
+                <div class="steps-grid">
+                    <!-- Step 1 -->
+                    <div class="step-card" data-step="1">
+                        <div class="step-header">
+                            <span class="step-number">1</span>
+                            <h3 class="step-title">Document Analysis</h3>
+                            <span class="step-status" id="status-1">Pending</span>
+                        </div>
+                        <div class="step-content">
+                            <p class="step-description">Upload your project documentation to our Custom GPT to automatically extract and map workflows in markdown format.</p>
+                            
+                            <div class="step-details">
+                                <h4>What you'll do:</h4>
+                                <ul>
+                                    <li>Gather all project documentation (requirements, specifications, user stories)</li>
+                                    <li>Upload documents to the Custom GPT interface</li>
+                                    <li>Review the generated markdown workflow</li>
+                                </ul>
+                                
+                                <h4>Why this matters:</h4>
+                                <p>AI-powered analysis ensures comprehensive workflow extraction and standardized documentation format.</p>
+                            </div>
+                            
+                            <div class="step-actions">
+                                <a href="https://chatgpt.com/g/g-689db26e25788191b7ad5fb9425e67b1-workflow-structure-gpt" target="_blank" class="btn btn-primary">Open Workflow GPT</a>
+                                <button class="btn btn-secondary" onclick="toggleDetails(1)">View Details</button>
+                                <button class="btn btn-success" onclick="markComplete(1)">Mark Complete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card" data-step="2">
+                        <div class="step-header">
+                            <span class="step-number">2</span>
+                            <h3 class="step-title">Prompt Generation</h3>
+                            <span class="step-status" id="status-2">Pending</span>
+                        </div>
+                        <div class="step-content">
+                            <p class="step-description">Transform the markdown workflow into optimized prompts for Bolt.new frontend generation.</p>
+                            
+                            <div class="step-details">
+                                <h4>What you'll do:</h4>
+                                <ul>
+                                    <li>Input the markdown workflow into the prompt generator GPT</li>
+                                    <li>Specify design requirements and functionality needs</li>
+                                    <li>Generate optimized Bolt.new prompts</li>
+                                    <li>Review and refine the prompts as needed</li>
+                                </ul>
+                                
+                                <h4>Why this matters:</h4>
+                                <p>Well-crafted prompts ensure Bolt.new generates exactly the frontend you need, saving iteration time.</p>
+                            </div>
+                            
+                            <div class="step-actions">
+                                <a href="https://chatgpt.com/g/g-689db4fff51081919895aeb123534ecd-bolt-new-prompt-generator" target="_blank" class="btn btn-primary">Open Prompt Generator</a>
+                                <button class="btn btn-secondary" onclick="toggleDetails(2)">View Details</button>
+                                <button class="btn btn-success" onclick="markComplete(2)">Mark Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2: Frontend Generation -->
+            <div class="phase-group">
+                <h2 class="phase-title">Phase 2: Frontend Creation</h2>
+                <p class="phase-description">Generate production-ready frontend code with AI</p>
+                
+                <div class="steps-grid">
+                    <!-- Step 3 -->
+                    <div class="step-card" data-step="3">
+                        <div class="step-header">
+                            <span class="step-number">3</span>
+                            <h3 class="step-title">Generate with Bolt.new</h3>
+                            <span class="step-status" id="status-3">Pending</span>
+                        </div>
+                        <div class="step-content">
+                            <p class="step-description">Use Bolt.new to automatically generate a complete frontend application based on your prompts.</p>
+                            
+                            <div class="step-details">
+                                <h4>What you'll do:</h4>
+                                <ul>
+                                    <li>Navigate to Bolt.new platform</li>
+                                    <li>Paste your generated prompts</li>
+                                    <li>Review the live preview as it generates</li>
+                                    <li>Make any necessary adjustments</li>
+                                    <li>Download the complete project</li>
+                                </ul>
+                                
+                                <h4>Why this matters:</h4>
+                                <p>Bolt.new creates production-ready code in minutes, not hours, with modern best practices built-in.</p>
+                            </div>
+                            
+                            <div class="step-actions">
+                                <a href="https://bolt.new" target="_blank" class="btn btn-primary">Open Bolt.new</a>
+                                <button class="btn btn-secondary" onclick="toggleDetails(3)">View Details</button>
+                                <button class="btn btn-success" onclick="markComplete(3)">Mark Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3: Implementation -->
+            <div class="phase-group">
+                <h2 class="phase-title">Phase 3: Implementation & Deployment</h2>
+                <p class="phase-description">Set up, test, and deploy your client-ready web application</p>
+                
+                <div class="steps-grid">
+                    <!-- Step 4 -->
+                    <div class="step-card" data-step="4">
+                        <div class="step-header">
+                            <span class="step-number">4</span>
+                            <h3 class="step-title">Cursor Project Setup</h3>
+                            <span class="step-status" id="status-4">Pending</span>
+                        </div>
+                        <div class="step-content">
+                            <p class="step-description">Import the generated code into Cursor for advanced AI-assisted development and customization.</p>
+                            
+                            <div class="step-details">
+                                <h4>What you'll do:</h4>
+                                <ul>
+                                    <li>Download the project files from Bolt.new</li>
+                                    <li>Create a new Cursor project</li>
+                                    <li>Import the downloaded files</li>
+                                    <li>Configure project settings and dependencies</li>
+                                    <li>Set up version control (Git)</li>
+                                </ul>
+                                
+                                <h4>Why this matters:</h4>
+                                <p>Cursor provides AI-powered code editing capabilities for rapid customization and enhancement.</p>
+                            </div>
+                            
+                            <div class="step-actions">
+                                <a href="https://cursor.sh" target="_blank" class="btn btn-primary">Download Cursor</a>
+                                <button class="btn btn-secondary" onclick="toggleDetails(4)">View Details</button>
+                                <button class="btn btn-success" onclick="markComplete(4)">Mark Complete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="step-card" data-step="5">
+                        <div class="step-header">
+                            <span class="step-number">5</span>
+                            <h3 class="step-title">Testing & Deployment</h3>
+                            <span class="step-status" id="status-5">Pending</span>
+                        </div>
+                        <div class="step-content">
+                            <p class="step-description">Add the to_do.md file and use Claude Code to test, refine, and deploy your application.</p>
+                            
+                            <div class="step-details">
+                                <h4>What you'll do:</h4>
+                                <ul>
+                                    <li>Create a to_do.md file with remaining tasks</li>
+                                    <li>Run Claude Code for automated testing</li>
+                                    <li>Address any issues or improvements identified</li>
+                                    <li>Perform final quality checks</li>
+                                    <li>Deploy to your hosting platform</li>
+                                </ul>
+                                
+                                <h4>Why this matters:</h4>
+                                <p>Automated testing ensures quality and reliability before presenting to clients.</p>
+                            </div>
+                            
+                            <div class="step-actions">
+                                <a href="https://claude.ai" target="_blank" class="btn btn-primary">Open Claude</a>
+                                <button class="btn btn-secondary" onclick="toggleDetails(5)">View Details</button>
+                                <button class="btn btn-success" onclick="markComplete(5)">Mark Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://www.generativeaistrategy.com/logos-tools/Logo%20background%20footer.svg" alt="Generative AI Strategy">
+                    <p>We bridge the gap between AI promises and tangible outcomes</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Generative AI Strategy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
