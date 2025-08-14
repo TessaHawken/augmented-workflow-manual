@@ -23,3 +23,9 @@ __pycache__/
 # Node (if you add npm packages later)
 node_modules/
 npm-debug.log*
+
+# Security - NEVER commit these files
+config.js
+.env
+*.key
+*secret*

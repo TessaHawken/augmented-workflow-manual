@@ -1,0 +1,6 @@
+// Copy this file to config.js and add your API key
+// NEVER commit config.js to git!
+
+const CONFIG = {
+    GEMINI_API_KEY: 'YOUR_GEMINI_API_KEY_HERE'
+};

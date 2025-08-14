@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Augmented Workflow Manual | Generative AI Strategy</title>
+    <title>Document Analysis & Workflow Generation | Generative AI Strategy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,8 +19,8 @@
                         <img src="https://www.generativeaistrategy.com/logos-tools/Logo%20background%20footer.svg" alt="Generative AI Strategy" class="logo">
                     </div>
                     <div class="tagline">
-                        <h2>Augmented Workflow Manual</h2>
-                        <p>Transform Presentations into Interactive Web Experiences</p>
+                        <h2>Document Analysis & Workflow Generation</h2>
+                        <p>Transform Documents into Structured Workflows using Gemini AI</p>
                     </div>
                 </div>
             </div>
@@ -30,200 +30,194 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">From Documentation to Deployment</h1>
-            <p class="hero-subtitle">A step-by-step guide for associates to create client-ready web pages using our augmented AI workflow</p>
+            <h1 class="hero-title">From Documentation to Workflow</h1>
+            <p class="hero-subtitle">Upload your project documentation and let AI automatically extract and structure workflows</p>
             <div class="hero-tagline">Unleash Human Potential Through Generative AI</div>
         </div>
     </section>
 
-    <!-- Progress Bar -->
-    <div class="progress-container">
-        <div class="container">
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressBar"></div>
-            </div>
-            <p class="progress-text"><span id="completedSteps">0</span> of 5 steps completed</p>
-        </div>
-    </div>
 
     <!-- Workflow Steps -->
     <main class="workflow-section">
         <div class="container">
-            <!-- Phase 1: Custom GPT -->
+            <!-- Document Analysis Section -->
             <div class="phase-group">
-                <h2 class="phase-title">Phase 1: Custom GPT Preparation</h2>
-                <p class="phase-description">Leverage AI to transform your project documentation into structured workflows</p>
+                <h2 class="phase-title">Document Analysis & Workflow Generation</h2>
+                <p class="phase-description">Upload your project documentation and let Gemini AI automatically extract and structure workflows</p>
                 
                 <div class="steps-grid">
-                    <!-- Step 1 -->
-                    <div class="step-card" data-step="1">
-                        <div class="step-header">
-                            <span class="step-number">1</span>
-                            <h3 class="step-title">Document Analysis</h3>
-                            <span class="step-status" id="status-1">Pending</span>
+                    <!-- Step 1 - Enhanced Hero Version -->
+                    <div class="step-card hero-step" data-step="1">
+                        <div class="step-header hero-header">
+                            <span class="step-number hero-number">1</span>
+                            <div class="hero-title-section">
+                                <h3 class="step-title hero-step-title">Document Analysis</h3>
+                                <p class="hero-subtitle">Transform your documentation into structured workflows with AI</p>
+                            </div>
+                            <span class="step-status hero-status" id="status-1">Ready</span>
                         </div>
-                        <div class="step-content">
-                            <p class="step-description">Upload your project documentation to our Custom GPT to automatically extract and map workflows in markdown format.</p>
+                        <div class="step-content hero-content">
+                            <div class="hero-description">
+                                <p class="step-description hero-desc">Upload your project documentation and let our AI automatically extract and map workflows in markdown format. Perfect for creating structured, client-ready deliverables.</p>
+                            </div>
+                            
+                            <!-- Enhanced File Upload Area -->
+                            <div class="upload-container hero-upload">
+                                <div class="upload-area" id="uploadArea-1" onclick="document.getElementById('fileInput-1').click()">
+                                    <div class="upload-icon">
+                                        <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                            <polyline points="7,10 12,15 17,10"/>
+                                            <line x1="12" y1="15" x2="12" y2="3"/>
+                                        </svg>
+                                    </div>
+                                    <div class="upload-content">
+                                        <h3>Drop files here or click to upload</h3>
+                                        <p>Supports PDF, TXT, DOC, DOCX files up to 10MB each</p>
+                                    </div>
+                                    <input type="file" id="fileInput-1" multiple accept=".pdf,.txt,.docx,.doc" style="display: none;" onchange="handleFileSelect(event)">
+                                </div>
+                                
+                                <!-- Sample File Button -->
+                                <div class="sample-section">
+                                    <button class="btn btn-outline" onclick="loadSampleFile()" title="Try with a sample document to see how it works">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem;">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+                                            <polyline points="14,2 14,8 20,8"/>
+                                            <line x1="16" y1="13" x2="8" y2="13"/>
+                                            <line x1="16" y1="17" x2="8" y2="17"/>
+                                            <polyline points="10,9 9,9 8,9"/>
+                                        </svg>
+                                        Try Sample Document
+                                    </button>
+                                    <div class="tooltip">Use our sample file to test the workflow analysis feature</div>
+                                </div>
+                                
+                                <div id="fileList-1" class="file-list-area"></div>
+                                
+                                <!-- Enhanced Configuration Fields -->
+                                <div class="config-section" id="configSection-1" style="display: none;">
+                                    <h4 class="config-title">Project Configuration</h4>
+                                    <div class="config-grid">
+                                        <div class="config-field">
+                                            <label class="config-label" for="clientName-1">
+                                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                                    <circle cx="12" cy="7" r="4"/>
+                                                </svg>
+                                                Client/Organization Name
+                                            </label>
+                                            <input type="text" id="clientName-1" class="config-input" placeholder="Enter client name" required>
+                                            <div class="input-hint">This will be used in the generated workflow documentation</div>
+                                        </div>
+                                        
+                                        <div class="config-field">
+                                            <label class="config-label" for="departments-1">
+                                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <rect x="3" y="3" width="7" height="7"/>
+                                                    <rect x="14" y="3" width="7" height="7"/>
+                                                    <rect x="14" y="14" width="7" height="7"/>
+                                                    <rect x="3" y="14" width="7" height="7"/>
+                                                </svg>
+                                                Departments/Teams
+                                            </label>
+                                            <input type="text" id="departments-1" class="config-input" placeholder="e.g., Marketing, Sales, Operations">
+                                            <div class="input-hint">Separate multiple departments with commas</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Enhanced Process Button -->
+                                <div class="process-section" id="processSection-1" style="display: none;">
+                                    <button class="btn btn-hero" id="processBtn-1" onclick="processWithGemini()">
+                                        <span class="btn-content">
+                                            <svg class="btn-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M9 19c-5 0-8-3-8-8s3-8 8-8 8 3 8 8-3 8-8 8"/>
+                                                <path d="M19 13h-2l-2 2-2-2H9V9l2-2 2 2h4v4z"/>
+                                            </svg>
+                                            <span class="btn-text">Process Documents with AI</span>
+                                        </span>
+                                        <div class="btn-loading" style="display: none;">
+                                            <svg class="loading-spinner" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="32" stroke-dashoffset="32" class="spinner">
+                                                    <animate attributeName="stroke-dashoffset" dur="2s" values="32;0;32" repeatCount="indefinite"/>
+                                                </circle>
+                                            </svg>
+                                            <span>Processing...</span>
+                                        </div>
+                                    </button>
+                                    <div class="process-info">
+                                        <div class="info-item">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="10"/>
+                                                <polyline points="12,6 12,12 16,14"/>
+                                            </svg>
+                                            Processing typically takes 30-60 seconds
+                                        </div>
+                                        <div class="info-item">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                                <polyline points="22,4 12,14.01 9,11.01"/>
+                                            </svg>
+                                            Your documents are processed securely and not stored
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Enhanced Output Area -->
+                                <div id="outputArea-1" class="output-area" style="display: none;">
+                                    <div class="output-header">
+                                        <h4 class="output-title">
+                                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+                                                <polyline points="14,2 14,8 20,8"/>
+                                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                            </svg>
+                                            Generated Project Description
+                                        </h4>
+                                        <div class="output-actions">
+                                            <button class="btn btn-copy" onclick="copyWorkflowToClipboard(1)" title="Copy to clipboard">
+                                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                                </svg>
+                                                Copy
+                                            </button>
+                                            <button class="btn btn-download" onclick="downloadWorkflow(1)" title="Download as project_description.md">
+                                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                                    <polyline points="7,10 12,15 17,10"/>
+                                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                                </svg>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="markdown-output">
+                                        <pre><code id="outputContent-1" class="markdown-content"></code></pre>
+                                    </div>
+                                    <div class="output-stats" id="outputStats-1"></div>
+                                </div>
+                            </div>
                             
                             <div class="step-details">
                                 <h4>What you'll do:</h4>
                                 <ul>
-                                    <li>Gather all project documentation (requirements, specifications, user stories)</li>
-                                    <li>Upload documents to the Custom GPT interface</li>
-                                    <li>Review the generated markdown workflow</li>
+                                    <li>Upload project documentation (PDFs, text files, etc.)</li>
+                                    <li>Enter client name and departments</li>
+                                    <li>AI processes and extracts workflows automatically</li>
+                                    <li>Download the generated markdown workflow</li>
                                 </ul>
                                 
                                 <h4>Why this matters:</h4>
-                                <p>AI-powered analysis ensures comprehensive workflow extraction and standardized documentation format.</p>
+                                <p>AI-powered analysis ensures comprehensive workflow extraction and standardized documentation format, saving hours of manual work.</p>
                             </div>
                             
                             <div class="step-actions">
-                                <a href="https://chatgpt.com/g/g-689db26e25788191b7ad5fb9425e67b1-workflow-structure-gpt" target="_blank" class="btn btn-primary">Open Workflow GPT</a>
+                                <a href="https://chatgpt.com/g/g-689db26e25788191b7ad5fb9425e67b1-workflow-structure-gpt" target="_blank" class="btn btn-secondary">Alternative: Use ChatGPT</a>
                                 <button class="btn btn-secondary" onclick="toggleDetails(1)">View Details</button>
                                 <button class="btn btn-success" onclick="markComplete(1)">Mark Complete</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="step-card" data-step="2">
-                        <div class="step-header">
-                            <span class="step-number">2</span>
-                            <h3 class="step-title">Prompt Generation</h3>
-                            <span class="step-status" id="status-2">Pending</span>
-                        </div>
-                        <div class="step-content">
-                            <p class="step-description">Transform the markdown workflow into optimized prompts for Bolt.new frontend generation.</p>
-                            
-                            <div class="step-details">
-                                <h4>What you'll do:</h4>
-                                <ul>
-                                    <li>Input the markdown workflow into the prompt generator GPT</li>
-                                    <li>Specify design requirements and functionality needs</li>
-                                    <li>Generate optimized Bolt.new prompts</li>
-                                    <li>Review and refine the prompts as needed</li>
-                                </ul>
-                                
-                                <h4>Why this matters:</h4>
-                                <p>Well-crafted prompts ensure Bolt.new generates exactly the frontend you need, saving iteration time.</p>
-                            </div>
-                            
-                            <div class="step-actions">
-                                <a href="https://chatgpt.com/g/g-689db4fff51081919895aeb123534ecd-bolt-new-prompt-generator" target="_blank" class="btn btn-primary">Open Prompt Generator</a>
-                                <button class="btn btn-secondary" onclick="toggleDetails(2)">View Details</button>
-                                <button class="btn btn-success" onclick="markComplete(2)">Mark Complete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Phase 2: Frontend Generation -->
-            <div class="phase-group">
-                <h2 class="phase-title">Phase 2: Frontend Creation</h2>
-                <p class="phase-description">Generate production-ready frontend code with AI</p>
-                
-                <div class="steps-grid">
-                    <!-- Step 3 -->
-                    <div class="step-card" data-step="3">
-                        <div class="step-header">
-                            <span class="step-number">3</span>
-                            <h3 class="step-title">Generate with Bolt.new</h3>
-                            <span class="step-status" id="status-3">Pending</span>
-                        </div>
-                        <div class="step-content">
-                            <p class="step-description">Use Bolt.new to automatically generate a complete frontend application based on your prompts.</p>
-                            
-                            <div class="step-details">
-                                <h4>What you'll do:</h4>
-                                <ul>
-                                    <li>Navigate to Bolt.new platform</li>
-                                    <li>Paste your generated prompts</li>
-                                    <li>Review the live preview as it generates</li>
-                                    <li>Make any necessary adjustments</li>
-                                    <li>Download the complete project</li>
-                                </ul>
-                                
-                                <h4>Why this matters:</h4>
-                                <p>Bolt.new creates production-ready code in minutes, not hours, with modern best practices built-in.</p>
-                            </div>
-                            
-                            <div class="step-actions">
-                                <a href="https://bolt.new" target="_blank" class="btn btn-primary">Open Bolt.new</a>
-                                <button class="btn btn-secondary" onclick="toggleDetails(3)">View Details</button>
-                                <button class="btn btn-success" onclick="markComplete(3)">Mark Complete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Phase 3: Implementation -->
-            <div class="phase-group">
-                <h2 class="phase-title">Phase 3: Implementation & Deployment</h2>
-                <p class="phase-description">Set up, test, and deploy your client-ready web application</p>
-                
-                <div class="steps-grid">
-                    <!-- Step 4 -->
-                    <div class="step-card" data-step="4">
-                        <div class="step-header">
-                            <span class="step-number">4</span>
-                            <h3 class="step-title">Cursor Project Setup</h3>
-                            <span class="step-status" id="status-4">Pending</span>
-                        </div>
-                        <div class="step-content">
-                            <p class="step-description">Import the generated code into Cursor for advanced AI-assisted development and customization.</p>
-                            
-                            <div class="step-details">
-                                <h4>What you'll do:</h4>
-                                <ul>
-                                    <li>Download the project files from Bolt.new</li>
-                                    <li>Create a new Cursor project</li>
-                                    <li>Import the downloaded files</li>
-                                    <li>Configure project settings and dependencies</li>
-                                    <li>Set up version control (Git)</li>
-                                </ul>
-                                
-                                <h4>Why this matters:</h4>
-                                <p>Cursor provides AI-powered code editing capabilities for rapid customization and enhancement.</p>
-                            </div>
-                            
-                            <div class="step-actions">
-                                <a href="https://cursor.sh" target="_blank" class="btn btn-primary">Download Cursor</a>
-                                <button class="btn btn-secondary" onclick="toggleDetails(4)">View Details</button>
-                                <button class="btn btn-success" onclick="markComplete(4)">Mark Complete</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 5 -->
-                    <div class="step-card" data-step="5">
-                        <div class="step-header">
-                            <span class="step-number">5</span>
-                            <h3 class="step-title">Testing & Deployment</h3>
-                            <span class="step-status" id="status-5">Pending</span>
-                        </div>
-                        <div class="step-content">
-                            <p class="step-description">Add the to_do.md file and use Claude Code to test, refine, and deploy your application.</p>
-                            
-                            <div class="step-details">
-                                <h4>What you'll do:</h4>
-                                <ul>
-                                    <li>Create a to_do.md file with remaining tasks</li>
-                                    <li>Run Claude Code for automated testing</li>
-                                    <li>Address any issues or improvements identified</li>
-                                    <li>Perform final quality checks</li>
-                                    <li>Deploy to your hosting platform</li>
-                                </ul>
-                                
-                                <h4>Why this matters:</h4>
-                                <p>Automated testing ensures quality and reliability before presenting to clients.</p>
-                            </div>
-                            
-                            <div class="step-actions">
-                                <a href="https://claude.ai" target="_blank" class="btn btn-primary">Open Claude</a>
-                                <button class="btn btn-secondary" onclick="toggleDetails(5)">View Details</button>
-                                <button class="btn btn-success" onclick="markComplete(5)">Mark Complete</button>
                             </div>
                         </div>
                     </div>
@@ -248,6 +242,12 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // This will be replaced by Vercel during build
+        window.GEMINI_API_KEY = '%VITE_GEMINI_API_KEY%';
+    </script>
+    <!-- For local development only -->
+    <script src="config.js"></script>
+    <script src="script-simple.js"></script>
 </body>
 </html>
